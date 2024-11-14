@@ -11,6 +11,8 @@ import dgl
 import networkx as nx
 
 import torch
+import warnings
+warnings.filterwarnings("ignore")
 
 # for visualization
 COLORS = [[39, 188, 221], [167, 72, 214], [82, 67, 198], [76, 198, 232],

@@ -15,6 +15,8 @@ from torchvision.ops import sigmoid_focal_loss
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from warmup_scheduler import GradualWarmupScheduler
+import warnings
+warnings.filterwarnings("ignore")
 
 
 class Tracker:

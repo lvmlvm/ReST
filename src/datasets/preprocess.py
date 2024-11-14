@@ -157,7 +157,7 @@ class BasePreprocess:
                 cID = det[5]
                 frame_style = {'Wildtrack': f'0000{f*5:04d}', 'PETS09': f'{f:03d}', 'CAMPUS': f'{f:04d}', 'CityFlow': f'{f}'}
                 frame = frame_style[DATASET_NAME]
-                gts[cID] = gts[cID].append({
+                gts[cID] = gts[cID]._append({
                                             'frame': frame,
                                             'id': det[4],
                                             'bb_left': det[0],
